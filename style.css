@@ -1,0 +1,102 @@
+/* ❤️ Fonts */
+:root {
+    --font-default: "Heebo", sans-serif;
+}
+
+:root {
+    --color-white: #f5f5f5;
+    --color-black: #202020;
+    --background: var(--color-black);
+    --color-primary: var(--color-black);
+    --color-secondary: #ff993c;
+    --color-terciary: #ffc28a;
+    --color-shadow: rgba(0, 0, 0, 0.5);
+    --shadow: 0 0 5px 1px var(--color-shadow);
+    --shadow-hover: 0 0 7px 1px var(--color-shadow);
+    --transition-smooth: 0.5s;
+    --transition-fast: 300ms;
+
+    /* button */
+    --border: 2em 2em 2em 2em;
+
+    /* transitions */
+    --smooth: 1s;
+}
+
+:root {
+    --scroll-behavior: smooth;
+}
+
+/* reset */
+
+body {
+    font-family: var(--font-default);
+    overflow-x: hidden;
+    background: var(--background);
+}
+
+.btn {
+    border-radius: var(--border);
+    border-width: 0;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    box-shadow: var(--shadow);
+    transition: 1s;
+}
+
+.btn:hover {
+    transition: 1s;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow);
+}
+
+.btn-secondary {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow);
+    transition: 1s;
+}
+.btn-secondary:hover {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+    box-shadow: var(--shadow-hover);
+    transition: 1s;
+}
+
+/* estilos */
+
+.header-img {
+    width: 10em;
+}
+
+/* card */
+
+.cards {
+    display: grid;
+    gap: 2em;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+
+.card {
+    background-color: var(--color-white);
+    transition: all 1s;
+    border-radius: var(--border);
+    grid-column: span 2;
+    box-shadow: 0 0 10px 5px #000;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.card-img {
+    width: 15em;
+    height: auto;
+}
+.card-h5 {
+}
+.card-p {
+}
+.card-btn {
+}
