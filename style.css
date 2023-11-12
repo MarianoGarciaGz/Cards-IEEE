@@ -9,7 +9,7 @@
     --background: var(--color-black);
     --color-primary: var(--color-black);
     --color-secondary: #ff993c;
-    --color-terciary: #ffc28a;
+    --color-blue: rgb(38, 108, 201);
     --color-shadow: rgba(0, 0, 0, 0.5);
     --shadow: 0 0 5px 1px var(--color-shadow);
     --shadow-hover: 0 0 7px 1px var(--color-shadow);
@@ -35,6 +35,12 @@ body {
     background: var(--background);
 }
 
+/* bootstrap classes */
+
+.bi::before{
+        vertical-align: middle;
+}
+
 .btn {
     border-radius: var(--border);
     border-width: 0;
@@ -46,8 +52,8 @@ body {
 
 .btn:hover {
     transition: 1s;
-    color: var(--color-black);
-    background-color: var(--color-white);
+    color: var(--color-white);
+    background-color:  color-mix(in srgb, var(--color-black) 100%, #fff 75%);
     box-shadow: var(--shadow);
 }
 
@@ -88,15 +94,33 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 .card-img {
     width: 15em;
     height: auto;
 }
 .card-h5 {
+    text-align: center;
 }
+
 .card-p {
 }
+
 .card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.card-btn--linkedin{
+    background-color: var(--color-blue);
+}
+.card-btn--linkedin:hover{
+    color: var(--color-white);
+    background-color:  color-mix(in srgb, var(--color-blue) 100%, #fff 75%);
+}
+
+.card-btn--github {
+}
+
